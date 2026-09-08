@@ -27,14 +27,17 @@ volunteers:
     linkedin_username: indivar-mishra
   - name: Jayita Bhattacharya
     github_username: jayita13
+    image: /Assets/volunteers/jayita13.jpg
     twitter_username: jayitabhattac11
     linkedin_username: jayita-bhattacharyya
   - name: Ram Gopal
     github_username: ramgopalsiddh
+    image: /Assets/volunteers/ramgopalsiddh.jpg
     twitter_username: ramgopalsiddh1
     linkedin_username: ramgopalsiddh
   - name: Nischal Jain 
     github_username: Nis-chal-Jain
+    image: /Assets/volunteers/nis-chal-jain.jpg
     twitter_username: nischaljain06
     linkedin_username: nischaljain1
   - name: Iliyas Shirol
@@ -44,45 +47,56 @@ volunteers:
     linkedin_username: iliyasshirol
   - name: Arjun Suresh
     github_username: eaarjun
+    image: /Assets/volunteers/eaarjun.jpg
     twitter_username: /
     linkedin_username: eaarjun
   - name: Tiyasha Banerjee
     github_username: tiyashabanerjee46
+    image: /Assets/volunteers/tiyashabanerjee46.jpg
     twitter_username: TBanerrjee
     linkedin_username: tiyasha-banerjee-06
   - name: Shreyas Hegde
     github_username: shreyas-omkar
+    image: /Assets/volunteers/shreyas-omkar.jpg
     twitter_username: shreyashegde91
     linkedin_username: shreyas-omkar
   - name: Deval Gupta
     github_username: devalgupta404
+    image: /Assets/volunteers/devalgupta404.jpg
     twitter_username: deval_gupta4
     linkedin_username: devalgupta4
   - name: Akshat Raj
     github_username: Akshat-Raj
+    image: /Assets/volunteers/akshat-raj.png
     twitter_username: AkshatRaj254441
     linkedin_username: akshat-raj-1b7745310
   - name: Manya Kumar
     github_username: mkumar1205
+    image: /Assets/volunteers/manya-kumar.svg
     twitter_username: mkumar1112
     linkedin_username: mkumar1205
   - name: Sarva Dubey
     github_username: HESleagacy
+    image: /Assets/volunteers/hesleagacy.png
     twitter_username: sarva82836
     linkedin_username: sarvadubey
   - name: Tanmay Srivastava
     github_username: tanmay-srivastav4
+    image: /Assets/volunteers/tanmay-srivastav4.jpg
     twitter_username: tanmay_sriv
     linkedin_username: tanmay-srivastava-
   - name: Inchara J
     github_username: Incharajayaram
+    image: /Assets/volunteers/incharajayaram.jpg
     twitter_username: IncyJ4
     linkedin_username: inchara-j-752050251
   - name: Shuvam Pal
     github_username: unichronic
+    image: /Assets/volunteers/unichronic.jpg
     twitter_username: unichronicles39
     linkedin_username: shuvampal3960
   - name: Bhuvan B
     github_username: BhuvanB404
+    image: /Assets/volunteers/bhuvanb404.png
     twitter_username: BhuvanB01xb
     linkedin_username: bhuvanb404

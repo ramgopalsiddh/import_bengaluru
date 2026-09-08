@@ -18,7 +18,7 @@ title: Volunteers
       <article class="volunteer-card">
         <img
           class="volunteer-avatar"
-          src="{% if volunteer.image %}{{ volunteer.image | relative_url }}{% else %}https://github.com/{{ volunteer.github_username }}.png{% endif %}"
+          src="{{ volunteer.image | relative_url }}"
           alt="{{ volunteer.name }}"
           width="120"
           height="120"

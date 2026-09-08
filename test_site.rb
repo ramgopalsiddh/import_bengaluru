@@ -36,4 +36,13 @@ jobs.each do |job|
   raise "missing job poster" if job["poster"] && !File.file?(job["poster"].delete_prefix("/"))
 end
 
+volunteers_html = File.read("_site/volunteers.html", encoding: "UTF-8")
+baseurl = YAML.load_file("_config.yml").fetch("baseurl")
+event.fetch("volunteers").each do |volunteer|
+  image = volunteer.fetch("image")
+  raise "volunteer image must be local: #{image}" unless image.start_with?("/Assets/")
+  raise "missing built volunteer image: #{image}" unless File.size?("_site#{image}")
+  raise "missing volunteer photo: #{volunteer.fetch('name')}" unless volunteers_html.include?(%{src="#{baseurl}#{image}"})
+end
+
 puts "Site checks passed"
