@@ -25,16 +25,19 @@ volunteers:
     image: /Assets/indivar.jpeg
     twitter_username: indimishra08
     linkedin_username: indivar-mishra
+    portfolio: https://indivar.xyz
   - name: Jayita Bhattacharya
     github_username: jayita13
     image: /Assets/volunteers/jayita13.jpg
     twitter_username: jayitabhattac11
     linkedin_username: jayita-bhattacharyya
-  - name: Ram Gopal
+    website: https://itsjb13.medium.com
+  - name: Ram Gopal Siddh
+    image: /Assets/ram_gopal_siddh.png
     github_username: ramgopalsiddh
-    image: /Assets/volunteers/ramgopalsiddh.jpg
     twitter_username: ramgopalsiddh1
     linkedin_username: ramgopalsiddh
+    portfolio: https://ramgopal.dev
   - name: Nischal Jain 
     github_username: Nis-chal-Jain
     image: /Assets/volunteers/nis-chal-jain.jpg

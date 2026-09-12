@@ -15,23 +15,46 @@ title: Volunteers
   <div class="wrap">
     <div class="volunteer-grid">
       {% for volunteer in site.data.event.volunteers %}
+      {% capture volunteer_link %}{% if volunteer.portfolio %}{{ volunteer.portfolio }}{% elsif volunteer.website %}{{ volunteer.website }}{% elsif volunteer.url %}{{ volunteer.url }}{% elsif volunteer.linkedin_username %}https://www.linkedin.com/in/{{ volunteer.linkedin_username }}{% elsif volunteer.github_username %}https://github.com/{{ volunteer.github_username }}{% endif %}{% endcapture %}
+      {% assign volunteer_link = volunteer_link | strip %}
       <article class="volunteer-card">
+        {% if volunteer_link != "" %}
+        <a class="volunteer-avatar-link" href="{{ volunteer_link }}" target="_blank" rel="noopener noreferrer" aria-label="{{ volunteer.name }}'s profile">
+          <img
+            class="volunteer-avatar"
+            src="{% if volunteer.image %}{{ volunteer.image | relative_url }}{% else %}https://github.com/{{ volunteer.github_username }}.png{% endif %}"
+            alt="{{ volunteer.name }}"
+            width="120"
+            height="120"
+            loading="lazy"
+          >
+        </a>
+        <h2 class="volunteer-name">
+          <a href="{{ volunteer_link }}" target="_blank" rel="noopener noreferrer">{{ volunteer.name }}</a>
+        </h2>
+        {% else %}
         <img
           class="volunteer-avatar"
-          src="{{ volunteer.image | relative_url }}"
+          src="{% if volunteer.image %}{{ volunteer.image | relative_url }}{% else %}https://github.com/{{ volunteer.github_username }}.png{% endif %}"
           alt="{{ volunteer.name }}"
           width="120"
           height="120"
           loading="lazy"
         >
         <h2 class="volunteer-name">{{ volunteer.name }}</h2>
+        {% endif %}
         <div class="volunteer-links">
-          <a href="https://github.com/{{ volunteer.github_username }}" rel="noopener noreferrer">GitHub</a>
-          {% if volunteer.twitter_username %}
-          <a href="https://x.com/{{ volunteer.twitter_username }}" rel="noopener noreferrer">X</a>
+          {% if volunteer.portfolio %}
+          <a href="{{ volunteer.portfolio }}" target="_blank" rel="noopener noreferrer">Portfolio</a>
+          {% elsif volunteer.website %}
+          <a href="{{ volunteer.website }}" target="_blank" rel="noopener noreferrer">Website</a>
+          {% endif %}
+          <a href="https://github.com/{{ volunteer.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+          {% if volunteer.twitter_username and volunteer.twitter_username != "/" %}
+          <a href="https://x.com/{{ volunteer.twitter_username }}" target="_blank" rel="noopener noreferrer">X</a>
           {% endif %}
           {% if volunteer.linkedin_username %}
-          <a href="https://www.linkedin.com/in/{{ volunteer.linkedin_username }}" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/{{ volunteer.linkedin_username }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           {% endif %}
         </div>
       </article>
