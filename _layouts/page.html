@@ -94,7 +94,11 @@
       border-radius: 50%;
       object-fit: cover;
     }
+    .volunteer-avatar-link { display: inline-block; border-radius: 50%; text-decoration: none; transition: transform .2s, box-shadow .2s; }
+    .volunteer-avatar-link:hover { transform: scale(1.05); }
     .volunteer-name { margin: 0; font-size: 1.2rem; }
+    .volunteer-name a { color: inherit; text-decoration: none; }
+    .volunteer-name a:hover { color: var(--blue); text-decoration: underline; }
     .volunteer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
     .volunteer-links a { color: var(--blue); font-size: .9rem; font-weight: 700; text-decoration: none; }
     .volunteer-links a:hover { text-decoration: underline; }
@@ -139,7 +143,7 @@
 
   <footer>
     <div class="wrap footer-grid">
-      <span>Hosted by <strong>BangPypers</strong> · Bangalore Python User Group</span>
+      <span>Hosted by <a href="https://bangalore.pythonindia.org/" target="_blank" rel="noopener noreferrer"><strong>BangPypers</strong> · Bangalore Python User Group</a></span>
       <div class="footer-links">
         <a href="{{ '/coc.html' | relative_url }}">Code of Conduct</a>
         <a href="https://bangalore.pythonindia.org/">Website</a>
